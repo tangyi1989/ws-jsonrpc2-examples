@@ -6,6 +6,7 @@ BUILD = $(ENV)  $(GO) build
 dep:
 	mkdir -p `pwd`/bin
 	mkdir -p `pwd`/lib/src
+	$(GOGET) github.com/tangyi1989/ws-jsonrpc2
 	$(GOGET) github.com/gorilla/websocket
 
 run-chat: dep
